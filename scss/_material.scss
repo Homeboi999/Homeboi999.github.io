@@ -453,14 +453,10 @@ $max-mobile-size: 768px;
 }
 
 // Material text colours
-$primary-text-color: rgba(0, 0, 0, 0.87);
-$secondary-text-color: rgba(0, 0, 0, 0.54);
-$hint-text-color: rgba(0, 0, 0, 0.38);
-$divider-color: rgba(0, 0, 0, 0.12);
-$w-primary-text-color: rgba(#ffffff, 1);
-$w-secondary-text-color: rgba(#ffffff, 0.7);
-$w-hint-text-color: rgba(#ffffff, 0.5);
-$w-divider-color: rgba(#ffffff, 0.12);
+$primary-text-color: rgba(#ffffff, 1);
+$secondary-text-color: rgba(#ffffff, 0.7);
+$hint-text-color: rgba(#ffffff, 0.5);
+$divider-color: rgba(#ffffff, 0.12);
 
 $swift-out: cubic-bezier(0.4, 0.0, 0.2, 1);
 $font-family: "Roboto", "Noto Sans", "Arial", "Helvetica", sans-serif;
