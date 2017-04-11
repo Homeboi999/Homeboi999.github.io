@@ -13,15 +13,15 @@
 }
 
 {
-    let tabs = document.getElementById ("tab-bar");
-    let pages = document.getElementsByClassName ("page");
-    let animateTimeout;
+    var tabs = document.getElementById ("tab-bar");
+    var pages = document.getElementsByClassName ("page");
+    var animateTimeout;
 
     function paginate () {
         window.clearTimeout (animateTimeout);
-        let prevPage = document.getElementsByClassName ("page selected")[0];
-        let page = document.getElementById ("page-" + (parseInt (tabs.selected) + 1));
-        for (let index = 0; index < pages.length; index++) {
+        var prevPage = document.getElementsByClassName ("page selected")[0];
+        var page = document.getElementById ("page-" + (parseInt (tabs.selected) + 1));
+        for (var index = 0; index < pages.length; index++) {
             pages[index].classList.remove ("selected");
             pages[index].classList.remove ("hidden");
         }
@@ -30,7 +30,7 @@
                 page.classList.add ("selected");
             }
             animateTimeout = window.setTimeout (() => {
-                for (let index = 0; index < pages.length; index++) {
+                for (var index = 0; index < pages.length; index++) {
                     if (!pages[index].classList.contains ("selected")) {
                         pages[index].classList.add ("hidden");
                     }
