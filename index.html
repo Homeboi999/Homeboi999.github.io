@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Some initial meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <title>ARM32</title>
+        <meta name="author" content="ARM32" />
+        
+        <!-- Import Roboto and Roboto Mono from Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:400,500,700" />
+        
+        <!-- Use Polymer elements -->
+        <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+        <link rel="import" href="bower_components/paper-tabs/paper-tabs.html" />
+        
+        <!-- Include the MDL grid component (and only the grid) -->
+        <link rel="stylesheet" href="css/lib/mdl-only-grid.css" />
+        
+        <!-- Include MDI -->
+        <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css" media="all" />
+        
+        <!-- Include bezier-easing -->
+        <script src="js/lib/bezier-easing.js" defer></script>
+
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="js/main.js" defer></script>
+        
+        <!-- Style Polymer elements -->
+        <style is="custom-style">
+            #tab-bar {
+                --paper-tabs-selection-bar-color: #000000;
+            }
+            
+            #tab-bar paper-tab {
+                --paper-tab-ink: #000000;
+            }
+        </style>
+    </head>
+    <body unresolved>
+        <header id="main-header"></header>
+        <header id="primary-title-container">
+            <h1 id="primary-title"><img src="images/logo-black.svg" /></h1>
+        </header>
+        
+        <paper-tabs id="tab-bar" selected="0">
+            <paper-tab>About</paper-tab>
+            <paper-tab>Projects</paper-tab>
+            <paper-tab>Contact</paper-tab>
+        </paper-tabs>
+        
+        <main id="content">
+            <section id="page-1" class="page">
+                
+            </section>
+            <section id="page-2" class="typography page">
+                <h3 class="mono">Web</h3>
+                <div class="projects-card card no-padding">
+                    <section>
+                        <b class="medium block">arm32x.github.io</b>
+                        My current GitHub pages website. You're looking at it right now.
+
+                        <span class="right-buttons">
+                            <a href="https://arm32x.github.io"><i class="mdi mdi-open-in-new"></i></a>
+                            <a href="https://github.com/arm32x/arm32x.github.io"><i class="mdi mdi-github-circle"></i></a>
+                        </span>
+                    </section>
+                    <section>
+                        <b class="medium block">Material Mark</b>
+                        A Material Design Markdown editor featuring Github Flavoured Markdown.
+                        
+                        <span class="right-buttons">
+                            <a href="https://arm32x.github.io/material-mark"><i class="mdi mdi-open-in-new"></i></a>
+                            <a href="https://github.com/arm32x/material-mark"><i class="mdi mdi-github-circle"></i></a>
+                            <a class="popup-button"><i class="mdi mdi-information"></i></a>
+                        </span>
+                        
+                        <template class="modal-content" data-class="typography">
+                            <h1>Material Mark</h1>
+                            
+                            <p>Material Mark is a Material Design Markdown editor built upon the <a href="https://ace.c9.io">Ace editor</a>.</p>
+                            
+                            <h3>Features</h3>
+                            
+                            <ul>
+                                <li>GitHub Flavoured Markdown</li>
+                                <li>Live preview</li>
+                                <li>Customized syntax highlighting</li>
+                            </ul>
+                            
+                            <h3>Links</h3>
+                            
+                            <ul>
+                                <li><a href="https://arm32x.github.io/material-mark">Web application</a></li>
+                                <li><a href="https://github.com/arm32x/material-mark">Source code on GitHub</a></li>
+                            </ul>
+                        </template>
+                    </section>
+                </div>
+                <h3 class="mono">Java</h3>
+                <div class="projects-card card no-padding">
+                    <section>
+                        <b class="medium block">Sharpshooter</b>
+                        A top-down shooter game that uses ULCC to define its levels.
+                        <blockquote class="info mdi mdi-information">The source code or executables of this project have not yet been published.</blockquote>
+                    </section>
+                    <section>
+                        <b class="medium block">ULCC</b>
+                        A parsed language that can define levels for video games that implement it.
+                        <blockquote class="info mdi mdi-information">The source code or library files of this project have not yet been published.</blockquote>
+                    </section>
+                </div>
+                <h3 class="mono">Minecraft Mods</h3>
+                <div class="projects-card card no-padding">
+                    <section>
+                        <b class="medium block">The Leather Mod</b>
+                        A mod that adds two new types of leather to the game.
+                        <blockquote class="info mdi mdi-information">The source code or release files of this project have not yet been published.</blockquote>
+                    </section>
+                </div>
+                <h3 class="mono">C++</h3>
+                <div class="projects-card card no-padding">
+                    <section>
+                        <b class="medium block">asciibox</b>
+                        A game played in the Windows console using ASCII characters.
+                        <blockquote class="info mdi mdi-information">The source code or executables of this project have not yet been published.</blockquote>
+                        <blockquote class="info mdi mdi-alert">This project is no longer being maintained.</blockquote>
+                    </section>
+                    <section>
+                        <b class="medium block">ansi-computercraft</b>
+                        A C++ wrapper to run ComputerCraft programs in a color-compatible terminal.
+                        
+                        <span class="right-buttons">
+                            <a href="https://github.com/arm32x/ansi-computercraft"><i class="mdi mdi-github-circle"></i></a>
+                        </span>
+                    </section>
+                </div>
+            </section>
+            <section id="page-3" class="page">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="typography card">
+                            <h3>Social accounts</h3>
+                            <p><a href="https://plus.google.com/u/0/116672119483056467701">Google+</a></p>
+                            <p><a href="https://github.com/arm32x">GitHub</a></p>
+                            <p><a href="https://scratch.mit.edu/users/ARM32/">Scratch</a></p>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="typography card">
+                            <h3>Email</h3>
+                            <p><a href="mailto:&#097;&#114;&#109;&#051;&#050;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#097;&#114;&#109;&#051;&#050;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <div id="overlay">
+            <div id="modal-dialog"></div>
+        </div>
+    </body>
+</html>
