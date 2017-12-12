@@ -394,6 +394,8 @@ $dark--hint-text-color: $dark--disabled-text-color;
 $dark--icon-color: $dark--primary-text-color;
 $dark--disabled-icon-color: $dark--disabled-text-color;
 
+$dark--divider-color: rgba(#ffffff, 0.12);
+
 // Some easing functions
 $curve-standard: cubic-bezier(0.4, 0.0, 0.2, 1.0);
 $curve-deceleration: cubic-bezier(0.0, 0.0, 0.2, 1.0);
@@ -601,21 +603,21 @@ $max-mobile-size: 768px;
 }
 
 // Adjust your theme here, if different from standard
-$status-bar-color: $light--status-bar-color;
-$app-bar-color: $light--app-bar-color;
-$background-color: $light--background-color;
-$card-color: $light--card-color;
+$status-bar-color: $dark--status-bar-color;
+$app-bar-color: $dark--app-bar-color;
+$background-color: $dark--background-color;
+$card-color: $dark--card-color;
 $accent-color: $app-bar-color;
 
-$primary-text-color: $light--primary-text-color;
-$secondary-text-color: $light--secondary-text-color;
-$disabled-text-color: $light--disabled-text-color;
+$primary-text-color: $dark--primary-text-color;
+$secondary-text-color: $dark--secondary-text-color;
+$disabled-text-color: $dark--disabled-text-color;
 $hint-text-color: $disabled-text-color;
 
 $icon-color: $secondary-text-color;
 $disabled-icon-color: $disabled-text-color;
 
-$divider-color: $light--divider-color;
+$divider-color: $dark--divider-color;
 
 $font-family: "Roboto", "Noto Sans", "Arial", sans-serif;
 $mono-font-family: "Roboto Mono", "Noto Sans Mono", "Droid Sans Mono", monospace;
